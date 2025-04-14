@@ -40,4 +40,4 @@ jobs:
       name: download artifacts
       with:
         name: native-binary
-        path: target/quarkus*
+        path: target/quarkus-pixels*
