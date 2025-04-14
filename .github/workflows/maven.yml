@@ -38,7 +38,7 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
-    - uses: actions/upload-artifact@v4.2.1
+    - uses: actions/upload-artifact@v4
       name: download artifacts
       with:
         name: artifacts
