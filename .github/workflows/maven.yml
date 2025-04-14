@@ -42,4 +42,4 @@ jobs:
       name: download artifacts
       with:
         name: artifacts
-        path: ${{github.repository}}/target/quarkus-pixels*
+        path: quarkus-pixels*
