@@ -1,0 +1,36 @@
+### GET request to example server
+POST http://localhost:8080/api/pixels
+accept: application/json
+Content-Type: application/json
+
+
+> {% client.global.set("pixelMapId", response.body.id); %}
+###
+GET http://localhost:8080/api/pixels/{{pixelMapId}}
+
+###
+PUT http://localhost:8080/api/pixels/{{pixelMapId}}
+content-type: application/json
+accept: application/json
+
+{
+  "id": "{{pixelMapId}}",
+  "x": 2,
+  "y": 2,
+  "color": 16711680
+}
+
+###
+GET http://localhost:8080/api/pixels
+accept: application/json
+content-type: application/json
+
+###
+WEBSOCKET ws://localhost:8080/start-websocket/{{pixelMapId}}
+content-type: application/json
+
+=== wait-for-server
+=== wait-for-server
+=== wait-for-server
+
+
